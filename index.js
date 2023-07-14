@@ -21,6 +21,6 @@ httpServer.get("/", (request, response) => {
 
 httpServer.use("/api", app);
 
-httpServer.listen(PORT, "localhost", () => {
-  console.log("Server started at port 5000");
+httpServer.listen(PORT, () => {
+  console.log(`Server started at port ${PORT}`);
 });
